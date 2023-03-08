@@ -1,0 +1,35 @@
+Big data processing refers to the collection, storage, retrieval, and analysis of large and complex data sets that are too big to be processed using traditional data processing techniques.
+
+Big data is typically characterized by the three Vs: volume, velocity, and variety. Volume refers to the vast amount of data that is generated every day. Velocity refers to the speed at which this data is generated and needs to be processed. Variety refers to the different types and formats of data that are generated, such as structured data (e.g., databases), semi-structured data (e.g., XML), and unstructured data (e.g., social media posts, videos, images).
+
+Big data processing involves the use of specialized tools and techniques, such as distributed computing, parallel processing, and machine learning, to handle the complexity and scale of big data. These techniques allow organizations to extract valuable insights and knowledge from their data, which can be used to improve decision-making, enhance business operations, and gain a competitive advantage.
+
+In summary, big data processing is the process of handling large and complex data sets using specialized tools and techniques to extract insights and knowledge from the data.
+
+Big data processing refers to the collection, storage, retrieval, and analysis of large and complex data sets that are too big to be processed using traditional data processing techniques. Big data is typically characterized by the three Vs: volume, velocity, and variety. Volume refers to the vast amount of data that is generated every day. Velocity refers to the speed at which this data is generated and needs to be processed. Variety refers to the different types and formats of data that are generated, such as structured data (e.g., databases), semi-structured data (e.g., XML), and unstructured data (e.g., social media posts, videos, images). Big data processing involves the use of specialized tools and techniques, such as distributed computing, parallel processing, and machine learning, to handle the complexity and scale of big data. These techniques allow organizations to extract valuable insights and knowledge from their data, which can be used to improve decision-making, enhance business operations, and gain a competitive advantage. In summary, big data processing is the process of handling large and complex data sets using specialized tools and techniques to extract insights and knowledge from the data.
+
+การประมวลผลข้อมูลขนาดใหญ่หมายถึงการรวบรวม การจัดเก็บ การค้นคืน และการวิเคราะห์ชุดข้อมูลขนาดใหญ่และซับซ้อนที่ใหญ่เกินกว่าจะประมวลผลโดยใช้เทคนิคการประมวลผลข้อมูลแบบดั้งเดิม โดยทั่วไปแล้ว Big Data จะแสดงลักษณะโดย Vs ทั้งสาม: ปริมาณ ความเร็ว และความหลากหลาย ปริมาณหมายถึงข้อมูลจำนวนมหาศาลที่สร้างขึ้นทุกวัน ความเร็วหมายถึงความเร็วที่ข้อมูลนี้ถูกสร้างขึ้นและจำเป็นต้องประมวลผล ความหลากหลายหมายถึงประเภทและรูปแบบต่างๆ ของข้อมูลที่สร้างขึ้น เช่น ข้อมูลที่มีโครงสร้าง (เช่น ฐานข้อมูล) ข้อมูลกึ่งโครงสร้าง (เช่น XML) และข้อมูลที่ไม่มีโครงสร้าง (เช่น โพสต์บนโซเชียลมีเดีย วิดีโอ รูปภาพ) การประมวลผลข้อมูลขนาดใหญ่เกี่ยวข้องกับการใช้เครื่องมือและเทคนิคพิเศษ เช่น การประมวลผลแบบกระจาย การประมวลผลแบบขนาน และการเรียนรู้ของเครื่อง เพื่อจัดการกับความซับซ้อนและขนาดของข้อมูลขนาดใหญ่ เทคนิคเหล่านี้ช่วยให้องค์กรสามารถดึงข้อมูลเชิงลึกและความรู้อันมีค่าจากข้อมูลของตน ซึ่งสามารถใช้เพื่อปรับปรุงการตัดสินใจ ปรับปรุงการดำเนินธุรกิจ และสร้างความได้เปรียบในการแข่งขัน โดยสรุป การประมวลผลข้อมูลขนาดใหญ่คือกระบวนการจัดการชุดข้อมูลขนาดใหญ่และซับซ้อนโดยใช้เครื่องมือและเทคนิคพิเศษเพื่อดึงข้อมูลเชิงลึกและความรู้จากข้อมูล
+
+MapReduce เป็นโมเดลการเขียนโปรแกรมสำหรับการประมวลผลข้อมูลขนาดใหญ่ในระบบคอมพิวเตอร์แบบกระจาย (Distributed Computing) ซึ่งทำงานโดยการแบ่งข้อมูลออกเป็นชิ้นย่อย และประมวลผลชิ้นย่อยเหล่านั้นพร้อมกันบนหลายๆเครื่องคอมพิวเตอร์ในระบบ Cluster
+
+MapReduce ประกอบด้วยสองช่วงหลัก คือ Map phase และ Reduce phase
+
+Map Phase:
+ในขั้นตอน Map phase ข้อมูลนำเข้าจะถูกแบ่งเป็นชิ้นย่อยเท่าๆกัน แล้วส่งต่อไปยังโหนดต่างๆ ที่อยู่ในระบบ Cluster เพื่อทำการประมวลผลข้อมูลในแต่ละชิ้นย่อย ซึ่งการประมวลผลนี้จะใช้ Function Map ซึ่งจะเปลี่ยนข้อมูลเข้ามาเป็นคู่ Key-Value ตามที่กำหนดไว้ในโปรแกรม
+
+Reduce Phase:
+ในขั้นตอน Reduce phase จะรวมข้อมูล Key-Value ที่ได้จาก Map phase โดยจะทำการแยกตาม Key และนำมาผสมกันเพื่อให้ได้ผลลัพธ์ที่ต้องการ ซึ่งการผสมข้อมูลนี้จะใช้ Function Reduce ซึ่งจะรวมข้อมูล Key-Value ที่เป็น Key เดียวกันไว้ด้วยกัน โดยที่ Value จะถูกประมวลผลต่อไปอีกครั้ง
+
+ขั้นตอน MapReduce จะเป็นการทำงานแบบ Parallel processing ซึ่งช่วยประมวลผลข้อมูลได้อย่างรวดเร็วและประหยัดเวลา โดยการทำงานแบบ Parallel processing นี้ทำให้ MapReduce เหมาะสำหรับการประมวลผลข้อมูลขนาดใหญ่
+
+Hadoop คือ โครงการโอเพนซอร์สที่เน้นการประมวลผลข้อมูลขนาดใหญ่บนระบบคอมพิวเตอร์แบบกระจาย โดยมีสองส่วนหลัก คือ Hadoop Distributed File System (HDFS) และ Hadoop MapReduce
+
+HDFS เป็นระบบเก็บข้อมูลแบบกระจาย (Distributed File System) ที่ใช้สำหรับเก็บข้อมูลขนาดใหญ่ และมีความสามารถในการเก็บข้อมูลแบบ redundancy หรือการทำสำเนาข้อมูลไว้ในหลายๆเครื่องเพื่อป้องกันการสูญหายของข้อมูลในกรณีที่เครื่องคอมพิวเตอร์หนึ่งเกิดความเสียหาย
+
+ส่วน Hadoop MapReduce เป็นโมเดลการประมวลผลข้อมูลที่ใช้งานร่วมกับ HDFS เพื่อให้เกิดการประมวลผลข้อมูลขนาดใหญ่ได้อย่างรวดเร็วและมีประสิทธิภาพ โดย MapReduce จะแบ่งการประมวลผลข้อมูลออกเป็นสองขั้นตอนหลัก คือ Map และ Reduce
+
+ในขั้นตอน Map จะมีการนำเข้าข้อมูลเพื่อสกัดข้อมูลสำคัญออกมา และแปลงข้อมูลให้อยู่ในรูปแบบ Key-Value Pairs ซึ่งจะถูกนำไปจัดกลุ่มแยกตาม Key และส่งต่อไปยังขั้นตอน Reduce
+
+ในขั้นตอน Reduce จะมีการรวมข้อมูลที่มี Key เดียวกันเข้าด้วยกัน โดยจะถูกนำมาประมวลผลและส่งผลลัพธ์ออกมาเป็นไฟล์แบบ Key-Value Pairs อีกครั้ง
+
+ดังนั้น การใช้งาน Hadoop MapReduce จึงช่วยให้เกิดการประมวลผลข้อมูลขนาดใหญ่ได
